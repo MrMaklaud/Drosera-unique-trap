@@ -7,6 +7,18 @@ Trap for Drosera node, which is detecting exacr amount of incoming tokens and if
 - `shouldRespond()` compares the latest balance with the previous one.  
 - If the balance increased by `0.0000777 ETH`, the trap returns `true`.
 
+## Deployment
+   - Add the contract to your drosera.toml configuration under [[traps]].
+   - Compile the contract with drosera build.
+   - Apply the configuration with drosera apply.
+   - Start your operator and monitor the dashboard/logs.
+
+When the target wallet receives 0.0000777 ETH, the trap will trigger and show a dark green block in the dashboard.
+
+## License
+
+This project is licensed under the MIT License.
+
 ## Trap Code
 
 ```solidity
@@ -39,6 +51,3 @@ contract IncomingTransferTrap is ITrap {
         return (false, "");
     }
 }
-```solidity
-
-ghjhhg
