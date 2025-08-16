@@ -39,7 +39,7 @@ contract IncomingTransferTrap is ITrap {
         return (false, "");
     }
 }
-
+'''
 ## Deployment
 
     Add the contract to your drosera.toml configuration under [[traps]].
