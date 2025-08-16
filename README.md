@@ -1,5 +1,5 @@
 # Drosera-unique-trap
-Trap for Drosera node, which is detecting exacr amount of incoming tokens and if it's equal to pre-defined, it will trigger event.
+Trap for Drosera node, which is detecting exact amount of incoming tokens and if it's equal to pre-defined, it will trigger event.
 
 ## How It Works
 
